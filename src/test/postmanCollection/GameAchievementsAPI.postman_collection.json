@@ -1,0 +1,1088 @@
+{
+	"info": {
+		"_postman_id": "bb398d44-e76c-4f57-a81e-db14728265a4",
+		"name": "GameAchievementsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "games",
+			"item": [
+				{
+					"name": "createGame",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Cast Away\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createGame Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Boulder Dash\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createGame Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Cast Away\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGames",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGames page 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/page/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"page",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGame",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateGame",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\",\r\n    \"displayName\": \"Game1PutTest\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteGame",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/88f374d5-5513-4fb4-ae6e-ae9ea60b1613",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"88f374d5-5513-4fb4-ae6e-ae9ea60b1613"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "achievements",
+			"item": [
+				{
+					"name": "createAchievement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Achievement1\",\r\n    \"description\": \"Description1\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAchievement Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Achievement2\",\r\n    \"description\": \"Description2\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createAchievement Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Achievement3\",\r\n    \"description\": \"Description3\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGameAchievements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGameAchievements page 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/page/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements",
+								"page",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAchievement",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61311\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"description\": \"g1d1PutTest\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements",
+								"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAchievement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/c4d71090-cf91-4a4e-a37b-325ed281bd09",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements",
+								"c4d71090-cf91-4a4e-a37b-325ed281bd09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAchievement Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/2c3528a5-d5e3-4d1c-89fa-b147f6279804",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"games",
+								"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+								"achievements",
+								"2c3528a5-d5e3-4d1c-89fa-b147f6279804"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BadRequests",
+			"item": [
+				{
+					"name": "BadRequests - games",
+					"item": [
+						{
+							"name": "getGame-gameId does not exist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateGame - null Game",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateGame - gameIds (url and request body) do not match",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\",\r\n        \"displayName\": \"game1PutTest\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateGame - required field left empty",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\",\r\n        \"displayName\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteGame - gameId does not exist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BadRequests - achievements",
+					"item": [
+						{
+							"name": "createAchievement - null achievement",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createAchievement - required fields left empty",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"\",\r\n    \"description\": \"\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createAchievement - url validation failed",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"g1a7\",\r\n    \"description\": \"g1d7\",\r\n    \"icon\": \"www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAchievements - illegal pageNumber",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/page/-15",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"page",
+										"-15"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAchievement-achievementId does not exist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/6cc0777a-84b4-4e77-aad3-6830b1bf2432",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"6cc0777a-84b4-4e77-aad3-6830b1bf2432"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAchievement-gameId does not exist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAchievement-achievementId and gameId do not exist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61312",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61312"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - null Achievement",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement -gameId does not exist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61311\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"description\": \"g1d1PutTest\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a89\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - achievementId and gameId do not exist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6cc0777a-84b4-4e77-aad3-6830b1bf2431\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"description\": \"g1d1PutTest\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"281c5f30-cc83-4f4f-ab7d-ed07a7a2a5db\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/281c5f30-cc83-4f4f-ab7d-ed07a7a2a5d7/achievements/6cc0777a-84b4-4e77-aad3-6830b1bf2432",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"281c5f30-cc83-4f4f-ab7d-ed07a7a2a5d7",
+										"achievements",
+										"6cc0777a-84b4-4e77-aad3-6830b1bf2432"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - achievementId does not exist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61312\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"description\": \"g1d1PutTest\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61312",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61312"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - achievementIds (url and request body) do not match",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61312\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"description\": \"g1d1PutTest\",\r\n    \"icon\": \"http://www.example.com/example_icon.png\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - required fields not set",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61311\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a85\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - request body game is null",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61311\",\r\n    \"displayName\": \"g1a1PutTest\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateAchievement - gameId and modifiedAchievement' s gameId do not match",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"e5e2a52e-2125-4f8f-8ed7-18f773f61311\",\r\n    \"displayName\": \"g1a1PutTest\",\r\n    \"game\": {\r\n        \"id\": \"ee2a2a57-9867-4e77-907c-7513ba2e6a89\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAchievement - achievementId does not exist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a85/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61312",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a85",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61312"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAchievement - achievementId and gameId do not exist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61312",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61312"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteAchievement - gameId does not exist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/games/ee2a2a57-9867-4e77-907c-7513ba2e6a89/achievements/e5e2a52e-2125-4f8f-8ed7-18f773f61311",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"games",
+										"ee2a2a57-9867-4e77-907c-7513ba2e6a89",
+										"achievements",
+										"e5e2a52e-2125-4f8f-8ed7-18f773f61311"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "populateDatabase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/database",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"database"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
